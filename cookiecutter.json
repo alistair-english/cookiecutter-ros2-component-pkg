@@ -1,0 +1,8 @@
+{
+  "full_name": "Coding Meerkat",
+  "email": "meerkat@example.com",
+  "package_name": "some_package_name",
+  "description": "A magical ROS2 package written by a meerkat...",
+  "__package_name_upper": "{{ cookiecutter.package_name|upper }}",
+  "__class_name": "{{ cookiecutter.package_name.split('_')|map('capitalize')|join }}"
+}

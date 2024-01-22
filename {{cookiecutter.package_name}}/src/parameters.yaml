@@ -1,0 +1,5 @@
+{{cookiecutter.package_name}}:
+    dummy_param:
+        type: double
+        default_value: 0.0
+        description: "Dummy parameter"
