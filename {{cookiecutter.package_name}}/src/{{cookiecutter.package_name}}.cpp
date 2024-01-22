@@ -5,6 +5,8 @@ namespace {{cookiecutter.package_name}}
 
 {{cookiecutter.__class_name}}::{{cookiecutter.__class_name}}(const rclcpp::NodeOptions& options) : Node("{{cookiecutter.package_name}}_node", options)
 {
+    param_listener_ = std::make_shared<ParamListener>(get_node_parameters_interface());
+    params_ = param_listener_->get_params();
 }
 
 }  // namespace {{cookiecutter.package_name}}

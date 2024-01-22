@@ -14,6 +14,10 @@ class {{cookiecutter.__class_name}} : public rclcpp::Node
 {
 public:
   {{cookiecutter.__class_name}}(const rclcpp::NodeOptions& options);
+
+private:
+  std::shared_ptr<ParamListener> param_listener_;
+  Params params_;
 };
 
 }  // namespace {{cookiecutter.package_name}}
