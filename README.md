@@ -1,0 +1,1 @@
+# cookiecutter-ros2-component-pkg
